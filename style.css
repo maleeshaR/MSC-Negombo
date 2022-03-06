@@ -1,0 +1,195 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: nonw;
+	box-sizing: boeder border-box;
+
+}
+body{
+	font-family: monospace;
+}
+nav{
+	background: #000000;
+	height: 150px;
+	width: 100%;
+
+}
+label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 220px;
+	padding:  2%;
+	font-weight: bold;
+
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+
+}
+nav ul li{
+	display: inline-block;
+	line-height: 220px;
+	margin: 0 5px;
+
+}
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	padding: 5px 12px;
+	border-radius: 6px;
+	text-transform: uppercase;
+
+}
+a.actice,a:hover{
+	background: #8B0000;
+	transition: 0.2s;
+}
+
+.content{
+	margin-top: 9%;
+	margin-left: 9%;
+	color: white;
+}
+.content h1{
+	font-size: 80px;
+	line-height: 100px;
+	font-weight: 600;
+}
+.content p{
+	max-width: 500px;
+	line-height: 40px;
+	font-size: 20px;
+}
+.slide-left{
+	animation: slideleft 1s linear forwards;
+}
+@keyframes slideleft{
+	0%{
+	    transform: tramslate(100px);
+	    opacity: 0;
+	}
+	100%{
+	    transform: tramslate(0px);
+	    opacity: 1;
+	}
+}
+.feature-img{
+	height: 60%;
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+
+}
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+.footer {
+	padding: 40px 0;
+	background-color: black;
+}
+
+.footer ul p {
+	color: inherit;
+	text-decoration: none;
+	opacity: 0.8;
+
+}
+.footer ul li {
+	display: inline-block;
+	padding: 0 15px;
+	margin-left: 48px;
+	color: white;
+}
+.footer ul li a: hover {
+	opacity: 1;
+}
+
+
+
+
+body{
+	margin: 0;
+	padding: 0;
+
+}
+.container{
+	text-align: center;
+	margin: 10px;
+
+}
+.btn{
+	border: 1px solid #f0932b;
+	background: none;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-family: "arial";
+	margin: 10px;
+	transition: 0.8s;
+	position: relative;
+	overflow: hidden;
+}
+.btn1{
+	color: #f0932b;
+}
+.btn1:hover{
+	color: #ffff;
+}
+.btn:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background: #f0932b;
+	z-index: -1;
+	transition: 0.8s;
+
+}
+.btn1::before,{top: 0;
+  border-radius: 50% 50% 0 0;}
+.btn1:hover::before{
+	height: 180%;
+}
